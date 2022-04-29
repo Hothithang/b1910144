@@ -64,7 +64,7 @@ DROP TABLE IF EXISTS `products`;
 CREATE TABLE `products` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `price` int(2) COLLATE utf8_unicode_ci NOT NULL,
+  `price`varchar(15) COLLATE utf8_unicode_ci NOT NULL,
   `image_front` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `image_back` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `new` tinyint(1) UNSIGNED NOT NULL,
