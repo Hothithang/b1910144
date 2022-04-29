@@ -29,23 +29,8 @@ use App\Models\User;
             <div class="product-sort col d-grid gap-2 align-items-center justify-content-end" id="product-sort">
                 <select class="form-select" aria-label="Default select example">
                     <option selected disabled>Price</option>
-                    <!-- <option value="1">Price, low to high</option> -->
-                    <!-- php $products = Product::orderBy('price', 'asc')->get(); ?> -->
-                    <!-- <option value="2">Price, high to low -->
-                        <!-- php $products = Product::orderBy('price', 'desc')->get(); -->
-                    <!-- </option> -->
-                    <?php 
-                    $colors = array("Price, low to high", "Price, high to low"); 
-                    foreach ($colors as $value) {
-                    ?>
-                        <option value="<?=$value?>"><?=$value?></option>
-                    <?php
-                        }
-                        if($value == 'Price, low to high'){
-                            
-                                $products = Product::orderBy('price', 'asc')->get();
-                        }
-                    ?>
+                    <option value="1">Price, low to high</option>
+                    <option value="2">Price, high to low</option>
                 </select>
             </div>
         </div>
